@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles'
 import { VideoLibrary, Favorite, Notifications } from '@mui/icons-material'
 import React, { type MouseEventHandler } from 'react'
 import { StreamCard } from '../components/common/StreamCard'
+import { type NextPage } from 'next'
 
 const StyledBox = styled(Box)({
   display: 'flex',
@@ -50,7 +51,7 @@ const wavillageInfo: Array<{ name: string, title: string, description: string, i
   }
 ]
 
-function Main (): JSX.Element {
+const Main: NextPage = (): JSX.Element => {
   return (
     <Grid container direction="column" justifyContent="center" alignItems="center" style={{ height: '100vh' }}>
       <Grid item>
@@ -83,4 +84,4 @@ function Main (): JSX.Element {
   )
 }
 
-export default Main
+export default generater(Main)
