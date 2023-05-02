@@ -4,7 +4,7 @@ import { Box } from '@mui/system'
 import { styled } from '@mui/material/styles'
 import { VideoLibrary, Favorite, Notifications } from '@mui/icons-material'
 import React, { type MouseEventHandler } from 'react'
-import { StreamCard } from '../components/common/StreamCard'
+import { StreamCard } from '@/components/common/StreamCard'
 import { type NextPage } from 'next'
 
 const StyledBox = styled(Box)({
@@ -84,4 +84,4 @@ const Main: NextPage = (): JSX.Element => {
   )
 }
 
-export default generater(Main)
+export default Main
